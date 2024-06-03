@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+          background-image: url('kellywoodbuilder2.fw.png');
+
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          font-family: arial;
+          background-attachment: fixed;
+        }
+        .parent{
+          display: flex;
+          justify-content: center;
+        }
+        * {
+            box-sizing: border-box;
+          }
+
+        /* Create two equal columns that floats next to each other */
+        .column1 {
+          float: left;
+          width: 33%;
+        }
+
+        .row2column1 {
+          float: left;
+          width: 68%;
+        }
+
+        .row2column1row {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        ul[class="navbar"] {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        li[class="navbar"] {
+          float: left;
+        }
+
+        li[class="navbar"] a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        li[class="navbar"] a:hover {
+          background-color: green;
+        }
+
+        li[class="navbar1"] {
+          float: left;
+        }
+
+        ul[class="navbar1"] {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+        }
+
+        li[class="navbar1"] a:hover {
+          color: green;
+        }
+
+        li[class="navbar1"] a {
+          display: block;
+          padding: 14px 16px;  
+          color: black;
+          text-decoration: none;
+        }
+
+        li[class="navbar1"] a[class="active1"] {
+          display: block;
+          padding: 14px 16px;  
+          color: green;
+          text-decoration: none;
+        }
+        
+        .active {
+          background-color: green;
+        }
+
+        .green{
+          color: green;
+        }
+        input {
+        width: 31.5%;
+        padding: 10px 14px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #aaa;
+        font-size: 10px;
+        resize: none;
+        }
+    </style>
+<body>
+<div class="parent">
+  <div class="child">
+    <div class="row" style="width: 1014px; height: 100px;">
+      <div class="column1" style="height: 94px;">
+        <img src="logo.jpg">
+      </div>
+      <div class="column">
+        <div class="columnrow1">
+        <p style="text-align: right;font-size: small;margin-right: 10px;">616 S. Jackson Amarillo, TX79101 | info@kellywood.com | 806.379.9696</p>
+        </div>
+        <div class="columnrow2">
+          <ul class="navbar" style="float: right;margin-top: 30px;">
+            <li class="navbar"><a class="active" href="home.html">Home</a></li>
+            <li class="navbar"><a href="about us.html">About Us</a></li>
+            <li class="navbar"><a href="service.html">Services</a></li>
+            <li class="navbar"><a href="employment.html">Employment</a></li>
+            <li class="navbar"><a href="contact us.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+    <div class="row" style="width: 1010px;">
+      <img src="carousel.jpg" style="width: 1014px;">
+    </div>
+    <div class="row" style="width: 1010px;">
+      <div class="row2column1" style="height: auto;">
+        <div class="row2column1row">
+          <a href="healthcare.html"><img src="healtcare.jpg" alt="Snow" style="width:100%"></a>
+        </div>
+        <div class="row2column1row">
+          <a href="about us.html"><img src="general-1.jpg" alt="Forest" style="width:100%"></a>
+        </div>
+        <div class="row2column1row">
+          <a href="retail.html"><img src="retail.jpg" alt="Mountains" style="width:100%"></a>
+        </div>
+        <div class="row2column1row2">
+          <p style="font-size: small;">Welcome to <span class="green">Kelly Wood Builder</span></p>
+          <hr />
+          <p style="font-size: smaller;">
+            Kelly Wood Builder is a General Contractor in Amarillo, Texas and now with offices in McKinney, Texas. We operate throughout the Midwest region. Started in 1977, we have come to specialize in healthcare and retail constructions, but remain very active in all types of projects. Our alliances with multiple architectural firms have paved the way to success in Design/Build, Construction Management, and Fast Track construction.
+          </p>
+          <p><a href="about us.html" style="color: green;float: right; font-size: x-small;">read more about us ></a></p>
+        </div>
+      </div>
+      <div class="row2column2" style="background-color:#bbb;align-items: center;margin-top: -10px;height: 350px;">
+        <br>
+        <h2 style="color: green;">Contact Form</h2>
+        <form id="myForm">
+          <input class="form-control" type="text" id="name" name="name" placeholder="Name:"><br>
+          <input type="text" id="email" name="email" placeholder="Email:"><br>
+          <input type="textarea" id="message" name="nessage" placeholder="Message:" style="height: 100px"><br>
+          &nbsp;<br>
+          <right><input type="submit" style="background-color: green;float: right;" onclick="myFunction()" value="Submit"></right>
+        </form>
+      </div> 
+    </div>
+    <div class="row" style="width: 1010px;">
+      <ul class="navbar1" style="list-style-type:disc; font-size: small;">
+        <li class="navbar1"><a class="active1" href="home.html">Home</a></li>
+        <li class="navbar1"><a href="about us.html" >About Us</a></li>
+        <li class="navbar1"><a href="service.html" >Services</a></li>
+        <li class="navbar1"><a href="employment.html" >Employment</a></li>
+        <li class="navbar1"><a href="contact us.html" >Contact Us</a></li>
+        <p style="float: right; font-size: smaller;">Dallas Website Design by Dallas Marketing Company Red Spot Design</p>
+      </ul>
+      <span style="font-size: smaller;margin-left: 15px;margin-bottom: 5px;">Copyright &#169; 2013. Kelly Wood Builder. All Rights Reserved.</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script>
+  function myFunction() {
+    alert("Request has been sent!");
+  }
+</script>
